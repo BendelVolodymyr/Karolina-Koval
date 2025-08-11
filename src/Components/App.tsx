@@ -1,30 +1,24 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Suspense, lazy } from 'react';
-import AppNav from './AppNav/AppNav';
+import React, { Suspense, lazy } from 'react';
+import { Route, Routes } from 'react-router-dom';
+import Layout from './Layout/Layout';
 
 const Home = lazy(() => import('../pages/Home'));
-const Projects = lazy(() => import('../pages/Projects'));
 const Drawings = lazy(() => import('../pages/Drawings'));
-const Homeworks = lazy(() => import('../pages/Homeworks'));
+const Homework = lazy(() => import('../pages/Homeworks'));
+const Works = lazy(() => import('../pages/Projects'));
 
-const App = () => {
+const App: React.FC = () => {
   return (
-    <Router>
-      <div className="max-w-4xl mx-auto mt-6">
-        <AppNav />
-        <Suspense
-          fallback={<div className="p-4 text-gray-500">Завантаження...</div>}
-        >
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/Karolina-Koval/home" element={<Home />} />
-            <Route path="/Karolina-Koval/projects" element={<Projects />} />
-            <Route path="/Karolina-Koval/drawings" element={<Drawings />} />
-            <Route path="/Karolina-Koval/homeworks" element={<Homeworks />} />
-          </Routes>
-        </Suspense>
-      </div>
-    </Router>
+    <Suspense fallback={<div>Завантаження...</div>}>
+      <Routes>
+        <Route path="/home" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="drawings" element={<Drawings />} />
+          <Route path="homework" element={<Homework />} />
+          <Route path="works" element={<Works />} />
+        </Route>
+      </Routes>
+    </Suspense>
   );
 };
 
