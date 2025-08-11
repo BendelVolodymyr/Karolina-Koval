@@ -11,13 +11,13 @@ const App: React.FC = () => {
   return (
     <Suspense fallback={<div>Завантаження...</div>}>
       <Routes>
-        <Route path="home" element={<Layout />}>
+        <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
+          <Route path="home" element={<Home />} />
           <Route path="drawings" element={<Drawings />} />
-          <Route path="homework" element={<Homework />} />
-          <Route path="works" element={<Works />} />
+          <Route path="homeworks" element={<Homework />} />
+          <Route path="projects" element={<Works />} />
         </Route>
-        <Route path="*" element={<Navigate to="/home" replace />} />
       </Routes>
     </Suspense>
   );

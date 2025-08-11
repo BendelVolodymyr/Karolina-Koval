@@ -1,14 +1,16 @@
 {
   "name": "karolina-koval",
+  "homepage": "https://github.com/BendelVolodymyr/Karolina-Koval/",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-  "dev": "vite",
-  "build": "vite build",
-  "preview": "vite preview",
-  "deploy": "gh-pages -d dist"
-},
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "predeploy": "npm run dev", 
+    "deploy": "gh-pages -d dist"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/BendelVolodymyr/Karolina-Koval.git"
@@ -19,7 +21,6 @@
   "bugs": {
     "url": "https://github.com/BendelVolodymyr/Karolina-Koval/issues"
   },
-  "homepage": "https://github.com/BendelVolodymyr/Karolina-Koval#readme",
   "devDependencies": {
     "@types/css-modules": "^1.0.5",
     "@types/react": "^19.1.4",
