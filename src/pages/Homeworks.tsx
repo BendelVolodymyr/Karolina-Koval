@@ -1,4 +1,4 @@
-import HomeworkCard from '../Components/HomeworkCard/HomeworkCard';
+import HomeworkCard from '../components/HomeworkCard/HomeworkCard';
 import styles from './Homeworks.module.scss';
 
 import hw1 from '../assets/hw-1.jpg';

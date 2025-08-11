@@ -1,5 +1,5 @@
 import styles from './Home.module.scss';
-import ContactCard from '../Components/ContactCard/ContactCard';
+import ContactCard from '../components/ContactCard/ContactCard';
 import profile from '.././assets/photo_2025-05-04_21-36-37.jpg';
 
 const Home = () => {
