@@ -1,5 +1,5 @@
 import React, { Suspense, lazy } from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { Navigate, Route, Routes } from 'react-router-dom';
 import Layout from './Layout/Layout';
 
 const Home = lazy(() => import('../pages/Home'));
@@ -17,6 +17,7 @@ const App: React.FC = () => {
           <Route path="homework" element={<Homework />} />
           <Route path="works" element={<Works />} />
         </Route>
+        <Route path="*" element={<Navigate to="/home" replace />} />
       </Routes>
     </Suspense>
   );
