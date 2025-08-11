@@ -11,7 +11,7 @@ const App: React.FC = () => {
   return (
     <Suspense fallback={<div>Завантаження...</div>}>
       <Routes>
-        <Route path="/" element={<Layout />}>
+        <Route path="home" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="drawings" element={<Drawings />} />
           <Route path="homework" element={<Homework />} />
