@@ -2,10 +2,10 @@ import { NavLink } from 'react-router-dom';
 import styles from './AppNav.module.scss';
 
 const navItems = [
-  { path: '/Karolina-Koval/home', label: 'Головна' },
-  { path: '/Karolina-Koval/homeworks', label: 'Домашні завдання' },
-  { path: '/Karolina-Koval/drawings', label: 'Мої малюнки' },
-  { path: '/Karolina-Koval/projects', label: 'Роботи' },
+  { path: '/home', label: 'Головна' },
+  { path: '/homeworks', label: 'Домашні завдання' },
+  { path: '/drawings', label: 'Мої малюнки' },
+  { path: '/projects', label: 'Роботи' },
 ];
 
 const AppNav = () => {
