@@ -6,10 +6,13 @@ const Home = () => {
   return (
     <div className={styles.container}>
       <section className={styles.profileSection}>
-        <img src={profile} alt="Кароліна Коваль" className={styles.avatar} />
+        <div className={styles.containerAvatar}>
+          <img src={profile} alt="Кароліна Коваль" className={styles.avatar} />
+        </div>
+
         <h1 className={styles.title}>Привіт! 👋</h1>
         <p className={styles.description}>
-          Мене звати <strong>Кароліна Ковал</strong>, мені 12 років 🎨. Я просто
+          Мене звати <strong>Кароліна</strong>, мені 13 років 🎨. Я просто
           обожнюю світ фантазії — малювати 🖌️, вигадувати щось нове ✨, творити
           свої ідеї у кольорі, формі та русі. Мої малюнки — це не просто
           картинки, це частинки моєї душі 💖. Коли я беру олівець або планшет —
