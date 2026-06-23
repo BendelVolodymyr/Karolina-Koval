@@ -1,6 +1,6 @@
 {
   "name": "karolina-koval",
-  "homepage": "https://github.com/BendelVolodymyr/Karolina-Koval/",
+  "homepage": "https://bendelvolodymyr.github.io/Karolina-Koval/",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,7 +8,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "predeploy": "npm run dev", 
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "repository": {
